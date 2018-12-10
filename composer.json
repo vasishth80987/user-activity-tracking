@@ -1,0 +1,19 @@
+{
+    "name": "vsynch/activity-tracking",
+    "description": "Track user activity in laravel systems",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Va Sh",
+            "email": "vasishth987@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Vsynch\\ActivityTracking\\": "packages/vsynch/activity_tracking/src/"
+        }
+    }
+}
