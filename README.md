@@ -1,2 +1,2 @@
 # user-activity-tracking
-User tracking and Activity logging package for laravel
+User tracking and Activity logging trait package for laravel
