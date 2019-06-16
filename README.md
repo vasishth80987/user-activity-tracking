@@ -22,7 +22,7 @@ $user->save();
 $user->activities()->create(['activity'=>'A new user has been created.');
 
 ```
-Retrive activity in your blades
+Retreive activity in your blades
 ```
 @foreach($user->activities as $activity)
 <p>{{$activity->activity}}</p>
