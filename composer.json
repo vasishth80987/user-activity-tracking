@@ -1,7 +1,7 @@
 {
     "name": "vsynch/activity-tracking",
     "description": "Track user activity in laravel systems",
-    "type": "composer-plugin",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
