@@ -9,6 +9,11 @@
             "email": "vasishth987@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Vsynch\\ActivityTracking\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "dont-discover": [],
