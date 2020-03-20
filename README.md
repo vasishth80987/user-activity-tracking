@@ -2,8 +2,7 @@
 User tracking and Activity logging trait package for laravel
 
 ## Installation
-Download files to Laravel, under new folder 'packages'
-Run composer update.
+composer require vsynch/activity-tracking
 
 ## Usage
 Add trait 'Trackable' to your models.
