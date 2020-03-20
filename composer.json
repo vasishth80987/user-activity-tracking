@@ -8,12 +8,6 @@
             "name": "Va Sh",
             "email": "vasishth987@gmail.com"
         }
-    ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Vsynch\\ActivityTracking\\": "packages/vsynch/activity_tracking/src/"
-        }
-    }
+    ]
+    
 }
