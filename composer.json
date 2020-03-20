@@ -8,6 +8,19 @@
             "name": "Va Sh",
             "email": "vasishth987@gmail.com"
         }
-    ]
+    ],
+    
+
+    "extra": {
+        "laravel": {
+            "dont-discover": [],
+            "providers": [
+                "Vsynch\\ActivityTracking\\ActivityTrackingServiceProvider"
+            ],
+            "aliases": {
+                "Crud": "Vsynch\\ActivityTracking\\Facades\\ActivityTracking"
+            }
+        }
+    }
     
 }
