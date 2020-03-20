@@ -13,10 +13,10 @@
         "laravel": {
             "dont-discover": [],
             "providers": [
-                "Vsynch\\Crud\\CrudServiceProvider"
+                "Vsynch\ActivityTracking\ActivityTrackingServiceProvider"
             ],
             "aliases": {
-                "Crud": "Vsynch\\Crud\\Facades\\Crud"
+                "Crud": "Vsynch\\ActivityTracking\\Facades\\ActivityTracking"
             }
         }
     }
