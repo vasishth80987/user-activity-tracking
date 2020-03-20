@@ -14,9 +14,11 @@ class ActivityTrackingServiceProvider extends ServiceProvider
     public function boot()
     {
         //include __DIR__.'/Routes.php';
-        $this->publishes([
-        __DIR__ . '/../database/2018_11_28_011756_create_user_activity_table.php'  => database_path('migrations/'.date('Y_m_d_His', time()).'_create_user_activity_table.php')
-    ], 'migrations');
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../database/2018_11_28_011756_create_user_activity_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_user_activity_table.php')
+            ], 'migrations');
+        }
     }
 
     /**
@@ -26,6 +28,7 @@ class ActivityTrackingServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        parent::register();
         //$this->app->make('Vsynch\UserActivity\UserActivityController');
         //$this->loadViewsFrom(__DIR__.'/views', 'UserActivity');
     }
