@@ -2,8 +2,9 @@
 User tracking and Activity logging trait package for laravel
 
 ## Installation
-Download files to Laravel, under new folder 'packages'
-Run composer update.
+```
+composer require vsynch/activity-tracking
+```
 
 ## Usage
 Add trait 'Trackable' to your models.
@@ -22,7 +23,7 @@ $user->save();
 $user->activities()->create(['activity'=>'A new user has been created.');
 
 ```
-Retreive activity in your blades
+Retrieve activity in your blades
 ```
 @foreach($user->activities as $activity)
 <p>{{$activity->activity}}</p>
