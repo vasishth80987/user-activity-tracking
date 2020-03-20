@@ -9,16 +9,14 @@
             "email": "vasishth987@gmail.com"
         }
     ],
-    
-
     "extra": {
         "laravel": {
             "dont-discover": [],
             "providers": [
-                "Vsynch\\ActivityTracking\\ActivityTrackingServiceProvider"
+                "Vsynch\\Crud\\CrudServiceProvider"
             ],
             "aliases": {
-                "Crud": "Vsynch\\ActivityTracking\\Facades\\ActivityTracking"
+                "Crud": "Vsynch\\Crud\\Facades\\Crud"
             }
         }
     }
