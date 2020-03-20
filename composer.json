@@ -16,7 +16,7 @@
                 "Vsynch\ActivityTracking\ActivityTrackingServiceProvider"
             ],
             "aliases": {
-                "Crud": "Vsynch\\ActivityTracking\\Facades\\ActivityTracking"
+                "Crud": "Vsynch\ActivityTracking\Facades\ActivityTracking"
             }
         }
     }
