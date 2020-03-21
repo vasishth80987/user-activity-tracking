@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserActivityTable extends Migration
+class CreateTrackActivityTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateUserActivityTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_activity', function (Blueprint $table) {
+        Schema::create('track_activity', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('trackable_id')->unsigned();
             $table->text('trackable_type');
@@ -30,6 +30,6 @@ class CreateUserActivityTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_activity');
+        Schema::dropIfExists('track_activity');
     }
 }

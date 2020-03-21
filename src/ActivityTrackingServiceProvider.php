@@ -16,7 +16,7 @@ class ActivityTrackingServiceProvider extends ServiceProvider
         //include __DIR__.'/Routes.php';
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../database/2018_11_28_011756_create_user_activity_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_user_activity_table.php')
+                __DIR__ . '/../database/2018_11_28_011756_create_track_activity_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_track_activity_table.php')
             ], 'migrations');
         }
     }

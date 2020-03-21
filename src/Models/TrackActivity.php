@@ -9,12 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * Date: 26/11/18
  * Time: 4:50 PM
  */
-class UserActivity extends \Illuminate\Database\Eloquent\Model
+class TrackActivity extends \Illuminate\Database\Eloquent\Model
 {
 
     use SoftDeletes;
 
-    protected $table = 'user_activity';
+    protected $table = 'track_activity';
     /**
      *
      * This is only a sample model to recreate the real scenario
@@ -29,7 +29,7 @@ class UserActivity extends \Illuminate\Database\Eloquent\Model
 
     public $dates = ['created_at','deleted_at'];
 
-    public function user(){
+    public function trackable(){
         return $this->morphTo();
     }
 }

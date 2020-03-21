@@ -16,6 +16,6 @@ trait Trackable
      */
     public function activities()
     {
-        return $this->morphMany('Vsynch\ActivityTracking\Models\UserActivity', 'trackable');
+        return $this->morphMany('Vsynch\ActivityTracking\Models\TrackActivity', 'trackable');
     }
 }
