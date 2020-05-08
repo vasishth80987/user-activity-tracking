@@ -17,7 +17,7 @@ class CreateTrackActivityTable extends Migration
             $table->increments('id');
             $table->integer('trackable_id')->unsigned();
             $table->text('trackable_type');
-            $table->text('activity_group');
+            $table->text('activity_group')->nullable();
             $table->longText('activity');
             $table->softDeletes();
             $table->timestamps();
