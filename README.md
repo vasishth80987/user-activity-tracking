@@ -26,11 +26,9 @@ class User extends Authenticatable
 ```
 Now you can add activity messages to your classes in your user functions
 ```
-$user = new User();
+$user = Auth::user();
 
-$user->save();
-
-$user->activities()->create(['activity'=>'A new user has been created.');
+$user->activities()->create(['subscriptions'=>'A new has been created for user:'.$user->id);
 
 ```
 Retrieve activity in your blades
