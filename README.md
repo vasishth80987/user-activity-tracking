@@ -28,8 +28,8 @@ Now you can add activity messages to your classes in your user functions
 ```
 $user = Auth::user();
 
-$user->activities()->create(['activity_group'=>'subscriptions','activity'=>'You have succesfully subscribed to a new plan.');
-$user->activities()->create(['activity_group'=>'invoicing','activity'=>'A new subscription invoice has been mailed');
+$user->activities()->create(['activity_group'=>'subscriptions','activity'=>'You have succesfully subscribed to a new plan.']);
+$user->activities()->create(['activity_group'=>'invoicing','activity'=>'A new subscription invoice has been mailed']);
 
 ```
 Retrieve activity in your blades
