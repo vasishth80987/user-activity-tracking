@@ -24,7 +24,7 @@ class TrackActivity extends \Illuminate\Database\Eloquent\Model
      * @var array
      */
     public $fillable = [
-        'activity'
+        'activity','activity_group'
     ];
 
     public $dates = ['created_at','deleted_at'];
