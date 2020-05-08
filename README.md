@@ -6,6 +6,16 @@ User tracking and Activity logging trait package for laravel
 composer require vsynch/activity-tracking
 ```
 
+## Publish migrations
+``
+php artisan vendor:publish --provider='Vsynch\ActivityTracking\ActivityTrackingServiceProvider'
+``
+
+## Run migrations
+``
+php artisan migrate
+``
+
 ## Usage
 Add trait 'Trackable' to your models.
 ```
